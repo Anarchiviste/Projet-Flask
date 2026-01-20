@@ -4,7 +4,7 @@
 
 # Datavisualisation
 
-- [9 Best JavaScript Techniques for Network Graph Visualization](https://rapidops.medium.com/9-best-javascript-techniques-for-network-graph-visualization-f5f377419b1a)
+[9 Best JavaScript Techniques for Network Graph Visualization](https://rapidops.medium.com/9-best-javascript-techniques-for-network-graph-visualization-f5f377419b1a)
 
 # SQL
 
