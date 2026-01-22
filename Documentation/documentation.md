@@ -5,8 +5,10 @@
 
 ## Enrichissement des données
 
--[OpenAlex](https://openalex.org/)
+- [OpenAlex](https://openalex.org/)
 - [Wikidata:Tools/Visualize data](https://www.wikidata.org/wiki/Wikidata:Tools/Visualize_data)
+- [Reshaping JSON with jq](https://programminghistorian.org/en/lessons/json-and-jq)
+- [Enrichir ses données avec le processus de réconciliation d’OpenRefine](https://programminghistorian.org/fr/lecons/enrichir-donnees-reconciliation-openrefine)
 
 ## SQL
 
