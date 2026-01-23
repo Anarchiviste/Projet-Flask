@@ -2,12 +2,26 @@
 
 -Télécharger Openrefine et ouvrir via le terminal. On peut ajouter son CSV mais prend également d'autres formats. 
 -Bonne pratique : dupliquer la colonne qu'on veut réconcilier avant de lancer le processus. Documenter toutes les décisions.
+
+## Wikidata 
 -Réconciliation Wikidata simple mais on valide à la main : possibilité de valider une réconciliation pour l'ensemble 
 des cellules similaires.
 -Possibilité d'ajouter des colonnes à partir de la colonne enrichie : permet d'ajouter automatiquement une colonne pour les
 coordonnées géographiques par ex. 
 -Proposition : on créé une table de relation entre les 55 thèmes de recherche et les entités wikidata (cf.sujet_TRHAA.csv) grâce à un identifiant.
 
+## OpenAlex
+-OpenAlex ne fournit pas d'endpoint pour Openrefine (seulement une API rest classique).
+-Option 1 : reconciliation via wikidata
+-Option 2 : transformer l'API OpenAlex en endpoint compatible (cf. Chatgpt)
+    On peut utiliser Python + Flask par exemple. Le script permet de recevoir une requête de OpenRefine (/reconcile) 
+    avec le nom à chercher, d'interroger OpenAlex (https://api.openalex.org/authors?search=...), de transformer le JSON reçu en format compatible OpenRefine et de retourner ce JSON à OpenRefine
+    
+Faire tourner test_OpenAlex.py
+
+Lancer dans Bash : python3 openalex_reconcile.py
+
+Dans Openrefine : reconcile/add custom service/url/http://localhost:5000/reconcile puis tester avec un nom d'auteur 
 
 ## Potentialités 
 -D'autres enrichissements possibles en fonction du projet : 
