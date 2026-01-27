@@ -1,0 +1,197 @@
+{
+  internal: {
+    updatedBy: string,
+    uniqueKey: number,
+    noticeType: string,
+    updatedDate: string,
+    uuid: string,
+    reference: string: [],
+    statusUpdatedDate: string,
+    createdDate: string,
+    createdBy: string,
+    referenceFromContent: string: [],
+    digest: {
+      databases: string: [],
+      createdBy: string,
+      authorName: string,
+      referenceType: string,
+      noticeType: string,
+      updatedDate: string,
+      title: string,
+      displayLabelLink: string,
+      status: string
+    },
+    permalink: string,
+    status: string
+  },
+  id: string,
+  content: {
+    referenceInformation: {
+      onlineSource: {
+        institution: {
+          ref: string,
+          conceptPath: string,
+          value: string
+        },
+        consultationDate: string,
+        comment: string,
+        sourcing: {
+          database: {
+            ref: string,
+            value: string
+          }
+        }[]
+      }[]
+    },
+    identificationInformation: {
+      reference: {
+        type: {
+          thesaurus: {
+            prefLabels: {
+              language: string,
+              value: string
+            }[],
+            ref: string,
+            conceptPath: string
+          }[]
+        }
+      },
+      author: {
+        role: {
+          thesaurus: {
+            prefLabels: {
+              language: string,
+              value: string
+            }[],
+            ref: string,
+            conceptPath: string
+          }[]
+        },
+        name: {
+          language: string,
+          value: string
+        },
+        sourcing: {
+          database: {
+            ref: string,
+            value: string
+          }
+        }[]
+      }[],
+      workTitle: {
+        label: {
+          language: string,
+          value: string
+        },
+        sourcing: {
+          database: {
+            ref: string,
+            value: string
+          }
+        }[]
+      }[],
+      thesis: {
+        defenseYear: {
+          startDatePathComputed: string: [],
+          startDateComputed: string,
+          start: {
+            prefix: {
+              thesaurus: {
+                prefLabels: {
+                  language: string
+                }[]
+              }
+            },
+            earliest: {
+              date: string,
+              format: string
+            }
+          },
+          endDateComputed: string
+        },
+        defensePlace: {
+          thesaurus: {
+            prefLabels: {
+              language: string,
+              value: string
+            }[],
+            ref: string,
+            conceptPath: string,
+            geoPoint: string
+          }[]
+        },
+        domain: {
+          thesaurus: {
+            prefLabels: {
+              language: string,
+              value: string
+            }[],
+            ref: string,
+            conceptPath: string
+          }[]
+        },
+        type: {
+          thesaurus: {
+            prefLabels: {
+              language: string,
+              value: string
+            }[],
+            ref: string,
+            conceptPath: string
+          }[]
+        },
+        defenseUniversity: {
+          thesaurus: {
+            prefLabels: {
+              language: string,
+              value: string
+            }[],
+            ref: string,
+            conceptPath: string
+          }[],
+          comment: string
+        },
+        sourcing: {
+          database: {
+            ref: string,
+            value: string
+          }
+        }[]
+      }[]
+    },
+    subjectInformation: {
+      subject: {
+        rameau: {
+          thesaurus: {
+            prefLabels: {
+              language: string,
+              value: string
+            }[],
+            ref: string,
+            conceptPath: string
+          }[]
+        },
+        sourcing: {
+          database: {
+            ref: string,
+            value: string
+          }
+        }[]
+      }[]
+    },
+    recordManagementInformation: {
+      recordLicence: {
+        language: string,
+        value: string
+      },
+      databaseLabel: {
+        ref: string,
+        value: string
+      }[],
+      recordSource: {
+        language: string,
+        value: string
+      }
+    }
+  }
+}
